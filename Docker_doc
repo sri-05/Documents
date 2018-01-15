@@ -68,3 +68,9 @@ https://www.youtube.com/watch?v=FlSup_eelYE   		//Link
  
 
 
+ *** Docker push to your own repository ***
+ -----
+ #. docker login --username=Username		//Login to your docker Repository
+ #. docker images							//Check the image which you want to push into docker hub
+ #. docker tag ImageId Username/Repository:ImageId		//Create tag
+ #. docker push Username/Repository 			//push the image 
