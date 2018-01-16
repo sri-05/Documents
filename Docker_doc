@@ -88,3 +88,12 @@ Build your docker image with tag centos_httpd:7
 #. docker build -f Dockerfile -t centos_httpd:7 .
 #. docker run -it -p 80:80 -e "container=docker" --privileged=true -d --security-opt seccomp:unconfined --cap-add=SYS_ADMIN -v /sys/fs/cgroup:/sys/fs/cgroup:ro centos_httpd:7 bash -c "/usr/sbin/init"
 
+
+*** Docker Container Backup ***
+#. docker ps 			//Get the docker container ID 
+#. docker commit -p <CONTAINER ID> <NAMES>		//This will save your running container as a image  -p is used to pause the running container 
+#. docker images 			//Check the docker image created
+#. docker save -o /path/to/backuplocation/any_name.tar <NAMES> 		/Backup as a tar file
+or you can push the image to your repository by 
+#. docker login 
+#. docker push <NAMES> 
