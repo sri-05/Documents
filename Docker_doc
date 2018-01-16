@@ -9,7 +9,7 @@ Install Docker for ubuntu 16.04
 #. systemctl status docker		//Check the status. Docker will start automatically after installation completed 
 
 
-Image is a like a package ex: Mysql, Httpd etc..
+Image is  like a package ex: Mysql, Httpd etc..
 Container is a Platform which contains the image Ex: Ubuntu with mysql 
 
 After Installing docker 
