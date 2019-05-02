@@ -1,6 +1,6 @@
 *** Docker ***
 -----
-Install Docker for ubuntu 16.04
+Install Docker on ubuntu 16.04
 #. curl -fsSL https://download.docker.com/linux/ubuntu/gpg |  apt-key add - 		//This command will add GPG key 
 #. add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" 		//This will get the latest repo of docker-ce
 #. apt-get update 		//Update the system before you install the docker
